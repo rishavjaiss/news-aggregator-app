@@ -16,10 +16,6 @@ module.exports = merge(common, {
   plugins: [
     new Webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("development")
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
     })
   ],
   module: {
