@@ -1,44 +1,44 @@
-*{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-body{
-    background-color: rgb(34, 30, 30);
+body {
+  background-color: rgb(34, 30, 30);
 }
-.heading{
-    text-align: center;
-    padding: 10px;
-    color: white;
-    background-color: black;
-    border: .5px solid white;
-    width: fit-content;
-    margin: auto;
-    margin-top: 10px;
+.heading {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: 0.5px solid white;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
 }
-.searchdiv{
-    text-align: center;
-    margin-top: 10px;
+.searchdiv {
+  text-align: center;
+  margin-top: 10px;
 }
-.searchdiv #search{
-    width: 90%;
-    margin: auto;
-    height: 40px;
-    border: 1px solid;
-    padding-left: 15px;
-    color:white;
-    background-color: grey;
+.searchdiv #search {
+  width: 90%;
+  margin: auto;
+  height: 40px;
+  border: 1px solid;
+  padding-left: 15px;
+  color: white;
+  background-color: grey;
 }
-.searchdiv #search:hover{
-    background-color: rgba(173, 156, 187, 0.9);
+.searchdiv #search:hover {
+  background-color: rgba(173, 156, 187, 0.9);
 }
 .article {
-    transition: all 0.7s ease-in 0s; 
+  transition: all 0.5s ease-in;
 }
 .article:hover {
-    opacity: 0.8;
-    transform: scale(1.07); 
+  opacity: 0.8;
+  transform: scale(1.07);
 }
 ::placeholder {
-    color: white;
-    opacity: 1;
-    font-weight: 600; 
+  color: white;
+  opacity: 1;
+  font-weight: 600;
 }
