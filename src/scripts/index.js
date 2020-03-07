@@ -12,16 +12,14 @@ ul.id = "news-articles";
 var news = document.querySelector("#news");
 news.appendChild(ul);
 
-// Request API
-
-//var req=new Request(headlinesURL);
-
 async function getArticles(url) {
   let response = await fetch(url);
   let data = await response.json();
   return data;
 }
+
 // Creating HTML Elements Dynamically
+
 getArticles(headlinesURL).then(print);
 function print(data) {
   console.log(data);
@@ -50,8 +48,10 @@ function print(data) {
     span.className = "article-author";
     li.appendChild(span);
 
-    // Adding Styles Dynamically
     li.addEventListener("click", liHandler);
+
+    // Adding Styles Dynamically
+
     li.style.cssText =
       "width:290px;margin:15px;color:white; background-color:rgb(96,96,96);";
     img.style.cssText = "width:240px;height:auto;margin:20px 0px 0px 20px;";
