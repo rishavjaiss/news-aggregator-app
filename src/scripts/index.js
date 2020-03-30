@@ -4,7 +4,7 @@ const headlinesURL =
   "http://newsapi.org/v2/top-headlines?country=in&apiKey=79e34a907fea407abf18357531170f5b";
 
 function getSearchURL(searchKey = "") {
-  return `http://newsapi.org/v2/everything?q=${searchKey}&from=2020-02-24&sortBy=popularity&apiKey=79e34a907fea407abf18357531170f5b`;
+  return `https://newsapi.org/v2/everything?q=${searchKey}&apiKey=79e34a907fea407abf18357531170f5b`;
 }
 
 var ul = document.createElement("ul");
