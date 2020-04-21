@@ -31,7 +31,7 @@ body {
   background-color: rgba(173, 156, 187, 0.9);
 }
 .article {
-  transition: all 0.5s ease-in;
+  transition: all 0.2s;
 }
 .article:hover {
   opacity: 0.8;
