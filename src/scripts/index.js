@@ -4,11 +4,7 @@ const headlinesURL =
   "https://newsapi.org/v2/top-headlines?country=in&apiKey=79e34a907fea407abf18357531170f5b";
 
 function getSearchURL(searchKey = "") {
-<<<<<<< HEAD
   return `https://newsapi.org/v2/everything?q=${searchKey}&sortBy=relevance&apiKey=79e34a907fea407abf18357531170f5b`;
-=======
-  return `https://newsapi.org/v2/everything?q=${searchKey}&apiKey=79e34a907fea407abf18357531170f5b`;
->>>>>>> b72051b6018fb5787762ed8d4dec4ef750721c2d
 }
 
 var ul = document.createElement("ul");
@@ -27,7 +23,6 @@ async function getArticles(url) {
 getArticles(headlinesURL).then(print);
 
 function print(data) {
-  console.log(data);
   for (let i = 0; i < data.articles.length; i++) {
     var li = document.createElement("li");
     li.className = "article";
