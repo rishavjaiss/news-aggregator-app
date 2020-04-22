@@ -23,6 +23,7 @@ async function getArticles(url) {
 getArticles(headlinesURL).then(print);
 
 function print(data) {
+  console.log(data);
   for (let i = 0; i < data.articles.length; i++) {
     var li = document.createElement("li");
     li.className = "article";
