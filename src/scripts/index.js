@@ -3,7 +3,7 @@ import "../styles/index.css";
 const headlinesURL =
   "https://newsapi.org/v2/top-headlines?country=in&apiKey=79e34a907fea407abf18357531170f5b";
 
-function getSearchURL(searchKey = "") {
+function getSearchURL(searchKey = "india") {
   return `https://newsapi.org/v2/everything?q=${searchKey}&sortBy=relevance&apiKey=79e34a907fea407abf18357531170f5b`;
 }
 
