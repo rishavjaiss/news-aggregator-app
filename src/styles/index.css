@@ -49,3 +49,24 @@ body {
   opacity: 1;
   font-weight: 600;
 }
+@media only screen and (max-width: 576px) {
+  li {
+    width: 200px !important;
+    height: 400px !important;
+  }
+  img {
+    width: 180px !important;
+    margin: 10px !important;
+  }
+  h2 {
+    font-size: 15px !important;
+    margin: 5px !important;
+  }
+  p {
+    margin: 5px !important;
+    font-size: 10px !important;
+  }
+  span {
+    font-size: 10px !important;
+  }
+}
