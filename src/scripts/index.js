@@ -23,7 +23,6 @@ async function getArticles(url) {
 getArticles(headlinesURL).then(print);
 
 function print(data) {
-  console.log(data);
   for (let i = 0; i < data.articles.length; i++) {
     var li = document.createElement("li");
     li.className = "article";
@@ -54,14 +53,14 @@ function print(data) {
     // Adding Styles Dynamically
 
     li.style.cssText =
-      "width:290px;margin:15px;color:white; background-color:rgb(96,96,96);";
-    img.style.cssText = "width:240px;height:auto;margin:20px 0px 0px 20px;";
-    h2.style.cssText = "padding:10px 20px 10px 20px;";
-    p.style.cssText = "padding:0px 20px 10px 20px; color:black";
+      "width:280px;margin:15px;color:white; background-color:#86CB92;cursor:pointer";
+    img.style.cssText = "width:250px;height:auto;margin:15px;";
+    h2.style.cssText = "padding:10px;color:black";
+    p.style.cssText = "padding:0px 20px 10px 20px; color:#A40E4C";
     span.style.cssText =
-      "float:right;padding:0px 20px 20px 0px; text-decoration:none; position:relative; bottom:0px; color:lightblue; font-weight:600;";
+      "float:right;padding:0px 20px 20px 0px; text-decoration:none; bottom:0px; color:#404e7c; font-weight:600;";
     a.style.cssText =
-      "float:right;padding:0px 20px 20px 0px; text-decoration:none; position:relative; bottom:0px; color:white; font-weight:600;";
+      "float:right;padding:0px 20px 20px 0px; text-decoration:none; bottom:0px; color:#3F88C5; font-weight:600;";
   }
   ul.style.cssText =
     "list-Style:none;display:flex; flex-wrap:wrap;padding:20px;justify-content:center; ";

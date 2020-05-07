@@ -1,14 +1,14 @@
 * {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Jost", sans-serif;
 }
 body {
-  background-color: rgb(34, 30, 30);
+  background-color: #0a122a;
 }
 .heading {
   text-align: center;
   padding: 10px;
   color: white;
-  background-color: black;
+  background-color: #404e7c;
   border: 0.5px solid white;
   width: fit-content;
   margin: auto;
@@ -16,19 +16,26 @@ body {
 }
 .searchdiv {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
+/* .searchbtn {
+  padding: 10px;
+  border-radius: 5px;
+}
+.searchbtn:hover {
+  background-color: rgba(173, 156, 187, 0.9);
+} */
 .searchdiv #search {
-  width: 90%;
+  width: 80%;
   margin: auto;
-  height: 40px;
-  border: 1px solid;
-  padding-left: 15px;
+  border: 2px solid;
+  padding: 15px;
   color: white;
-  background-color: grey;
+  background-color: #0a122a;
+  border-radius: 5px;
 }
 .searchdiv #search:hover {
-  background-color: rgba(173, 156, 187, 0.9);
+  background-color: #404e7c;
 }
 .article {
   transition: all 0.2s;
