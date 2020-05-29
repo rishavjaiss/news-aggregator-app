@@ -1,10 +1,9 @@
 import "../styles/index.css";
-
-const headlinesURL =
-  "https://newsapi.org/v2/top-headlines?country=in&apiKey=79e34a907fea407abf18357531170f5b";
+const API_KEY = `a5d590898d754ccfb9121b7e21eadaaa`;
+const headlinesURL = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
 
 function getSearchURL(searchKey = "india") {
-  return `https://newsapi.org/v2/everything?q=${searchKey}&sortBy=relevance&apiKey=79e34a907fea407abf18357531170f5b`;
+  return `https://newsapi.org/v2/everything?q=${searchKey}&sortBy=relevance&apiKey=${API_KEY}`;
 }
 
 var ul = document.createElement("ul");
@@ -71,8 +70,6 @@ getArticles().then((data) => {
 });
 
 function liHandler(event) {
-  debugger;
-  console.log(event);
   const url = event.currentTarget.querySelector("a").href;
   window.open(url);
 }
@@ -82,8 +79,10 @@ function searchHandler(event) {
     searchPrint(event.target.value);
   }
 }
+
 var search = document.querySelector("#search");
 search.addEventListener("keyup", searchHandler);
+
 function searchPrint(searchKey) {
   document.querySelector("#news-articles").innerHTML = "";
 
