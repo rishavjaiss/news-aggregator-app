@@ -1,9 +1,9 @@
 import "../styles/index.css";
 const API_KEY = `a5d590898d754ccfb9121b7e21eadaaa`;
-const headlinesURL = `https://newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
+const headlinesURL = `https://cors-anywhere.herokuapp.com/newsapi.org/v2/top-headlines?country=in&apiKey=${API_KEY}`;
 
 function getSearchURL(searchKey = "india") {
-  return `https://newsapi.org/v2/everything?q=${searchKey}&sortBy=relevance&apiKey=${API_KEY}`;
+  return `https://cors-anywhere.herokuapp.com/newsapi.org/v2/everything?q=${searchKey}&sortBy=relevance&apiKey=${API_KEY}`;
 }
 
 var ul = document.createElement("ul");
